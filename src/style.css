@@ -1,0 +1,7 @@
+:root {
+    --juicy: rgb(255, 0, 255);
+}
+   
+body {
+    background-color: var(--juicy);
+}

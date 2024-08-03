@@ -1,7 +1,103 @@
 :root {
-    --juicy: rgb(255, 0, 255);
+  --juicy: rgb(255, 0, 255);
+  --theme-l5: #f0f3f8;
+  --theme-l4: #cdd9e7;
+  --theme-l3: #9bb2d0;
+  --theme-l3a: #adc0d8;
+  --theme-l2: #698cb8;
+  --theme-l1: #456793;
+  --theme: #2e4461;
+  --theme-d1: #293d57;
+  --theme-d2: #25364e;
+  --theme-d3: #203044;
+  --theme-d4: #1b293a;
+  --theme-d5: #172231;
+
+  /*Main*/
+  --main-background-color: var(--theme-l3);
+  --main-background-color-alt: var(--theme-l3a);
+  --main-secondary-color: var(--theme-l4);
+  --main-border-color: var(--theme);
+  --main-border-color-alt: var(--theme-l1);
+
+  /*Toggle Menu*/
+  --toggle-switch-color: var(--theme-l5);
+  --toggle-right-color: var(--theme-l2);
+  --toggle-right-color-alt: var(--theme-l3);
+  --toggle-left-color: var(--theme-l2);
+  --toggle-left-color-alt: var(--theme-l3);
+
+  /*Header*/
+  --header-background-color: var(--theme-d1);
+  --header-background-color-alt: var(--theme);
+  --header-input-field-color: var(--theme-l4);
+  --header-input-field-color-alt: var(--theme-l5);
+  --header-button-color: var(--theme-l2);
+  --header-button-color-alt: var(--theme-l3);
+  --header-border-color: var(--theme-d5);
+  --header-text-color: var(--theme-l5);
+
+  /*Content Carousel*/
+  --carousel-arrow-color: var(--theme-d5);
+  --carousel-arrow-active: rgba(0, 0, 0, 0.5);
+  --carousel-slide-counter: var(--theme-d5);
+  --carousel-dot: rgba(0, 0, 0, 0.1);
+  --carousel-dot-active: rgba(0, 0, 0, 0.7);
+
+  --system-ui: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
-   
+
 body {
-    background-color: var(--juicy);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  background-image: linear-gradient(to right, var(--theme-l2), var(--theme-l3));
+  font-family: var(--system-ui);
 }
+
+.main_display_container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  width: 65%;
+  height: 70%;
+  margin: 5%;
+}
+
+.weather_summary_container {
+  grid-area: 1 / 1 / 4 / 3;
+  border-top: 2px solid var(--main-border-color);
+  padding: 10px;
+}
+
+.carousel_container {
+  grid-area: 1 / 4 / 4 / 7;
+  border-top: 2px solid var(--main-border-color);
+
+  padding: 10px;
+}
+
+.forecast_container {
+  grid-area: 4 / 1 / 6 / 7;
+  display: flex;
+  align-items: center;
+  border-top: 2px solid var(--main-border-color);
+  border-bottom: 2px solid var(--main-border-color);
+  padding: 10px;
+}
+
+/*Layout*/
+/*--Display/Content*/
+/*--WidhtHeight*/
+/*--MarginsBordersPadding*/
+/*--LayoutFont*/
+/*Styling*/
+/*--*/
+/*Interactive*/
+/*--Animations*/

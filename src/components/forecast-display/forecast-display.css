@@ -1,0 +1,51 @@
+.forecast_display {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.forecast_day {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 90%;
+  border: 2px solid var(--main-border-color-alt);
+  border-radius: 5%;
+  padding: 5px 15px 5px 15px;
+  background-color: var(--main-background-color-alt);
+}
+
+.forecast_day:hover {
+  height: calc(90% + 5px);
+  border: 2px solid var(--main-border-color);
+  padding: 0px 15px 0px 15px;
+  background-color: var(--main-secondary-color);
+}
+
+.forecast_day > p {
+  margin: 0;
+  font-style: italic;
+}
+
+.forecast_day > p:first-of-type {
+  font-style: normal;
+  margin: 0;
+  font-weight: bold;
+}
+
+.forecast_day > img {
+  max-height: 35%;
+  width: auto;
+  border-radius: 5%;
+}
+
+.forecast_day > p:last-child {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  font-weight: bold;
+}

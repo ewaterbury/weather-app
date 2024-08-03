@@ -1,0 +1,32 @@
+.table {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: start;
+  overflow: auto;
+}
+
+.table_heading_row {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%;
+  margin-bottom: 5%;
+}
+
+.table_row {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  width: 75%;
+  min-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 2px solid var(--main-border-color);
+  padding: 3px 0 3px 0;
+}
+
+.table_row:nth-child(2) {
+  border-top: 2px solid var(--main-border-color);;
+}
+
+
